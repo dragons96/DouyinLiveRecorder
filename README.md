@@ -57,7 +57,7 @@ retry_interval = 5
 - [x] 猫耳FM
 - [x] Look直播
 - [x] WinkTV
-- [x] FlexTV
+- [x] TTingLive(原Flextv)
 - [x] PopkonTV
 - [x] TwitCasting
 - [x] 百度直播
@@ -87,6 +87,10 @@ retry_interval = 5
 - [x] 淘宝
 - [x] 京东
 - [x] Faceit
+- [x] 咪咕
+- [x] 连接直播
+- [x] 来秀直播
+- [x] Picarto
 - [ ] 更多平台正在更新中
 
 </div>
@@ -170,8 +174,7 @@ https://www.yy.com/22490906/22490906
 B站:
 https://live.bilibili.com/320
 
-小红书（推荐使用主页地址):
-https://www.xiaohongshu.com/user/profile/6330049c000000002303c7ed?appuid=5f3f478a00000000010005b3
+小红书（直播间分享地址):
 http://xhslink.com/xpJpfM
 
 bigo直播:
@@ -201,7 +204,7 @@ https://look.163.com/live?id=65108820&position=3
 WinkTV:
 https://www.winktv.co.kr/live/play/anjer1004
 
-FlexTV:
+FlexTV(TTinglive)::
 https://www.flextv.co.kr/channels/593127/live
 
 PopkonTV:
@@ -291,6 +294,18 @@ https://3.cn/28MLBy-E
 
 Faceit:
 https://www.faceit.com/zh/players/Compl1/stream
+
+连接直播:
+https://show.lailianjie.com/10000258
+
+咪咕直播:
+https://www.miguvideo.com/p/live/120000541321
+
+来秀直播:
+https://www.imkktv.com/h5/share/video.html?uid=1845195&roomId=1710496
+
+Picarto:
+https://www.picarto.tv/cuteavalanche
 ```
 
 &emsp;

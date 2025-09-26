@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import asyncio
-from streamget.logger import logger
-from streamget import spider
+from src.logger import logger
+from src import spider
 
 # 以下示例直播间链接不保证时效性，请自行查看链接是否能正常访问
 # Please note that the following example live room links may not be up-to-date
@@ -71,7 +71,7 @@ LIVE_STREAM_CONFIG = {
         "func": spider.get_winktv_stream_data,
     },
     "flextv": {
-        "url": "https://www.flextv.co.kr/channels/593127/live",
+        "url": "https://www.ttinglive.com/channels/685479/live",
         "func": spider.get_flextv_stream_data,
     },
     "looklive": {
@@ -190,6 +190,22 @@ LIVE_STREAM_CONFIG = {
     "faceit": {
         "url": "https://www.faceit.com/zh/players/Compl1/stream",
         "func": spider.get_faceit_stream_data,
+    },
+    "lianjie": {
+        "url": "https://show.lailianjie.com/10000258",
+        "func": spider.get_lianjie_stream_url,
+    },
+    "migu": {
+        "url": "https://www.miguvideo.com/p/live/120000541321",
+        "func": spider.get_migu_stream_url,
+    },
+    "laixiu": {
+        "url": "https://www.imkktv.com/h5/share/video.html?uid=1845195&roomId=1710496",
+        "func": spider.get_laixiu_stream_url,
+    },
+    "picarto": {
+        "url": "https://www.picarto.tv/cuteavalanche",
+        "func": spider.get_picarto_stream_url,
     }
 }
 

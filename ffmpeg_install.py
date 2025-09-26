@@ -15,7 +15,7 @@ import zipfile
 from pathlib import Path
 import requests
 from tqdm import tqdm
-from streamget.logger import logger
+from src.logger import logger
 
 current_platform = platform.system()
 execute_dir = os.path.split(os.path.realpath(sys.argv[0]))[0]
@@ -122,7 +122,7 @@ def install_ffmpeg_linux():
         logger.debug("Trying to install the stable version of ffmpeg")
         result = subprocess.run(['yum', '-y', 'update'], capture_output=True)
         if result.returncode != 0:
-            logger.error(f"Failed to update package lists using yum.")
+            logger.error("Failed to update package lists using yum.")
             return False
 
         result = subprocess.run(['yum', 'install', '-y', 'ffmpeg'], capture_output=True)
