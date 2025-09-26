@@ -7,3 +7,4 @@ httpx[http2]>=0.28.1
 PyExecJS>=1.5.1
 sqlalchemy
 pymysql
+sqlalchemy

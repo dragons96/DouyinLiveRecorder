@@ -1,8 +1,11 @@
 ![video_spider](https://socialify.git.ci/ihmily/DouyinLiveRecorder/image?font=Inter&forks=1&language=1&owner=1&pattern=Circuit%20Board&stargazers=1&theme=Light)
 
 ## 接入 webui
+
 接入 [https://github.com/dragons96/DouyinLiveRecorder-webui](https://github.com/dragons96/DouyinLiveRecorder-webui) 方式如下：
-1. `cofnig/config.ini` 文件中配置`工作节点设置`相关信息
+
+1. `cofnig/config.ini` 文件中配置 `工作节点设置`相关信息
+
 ```ini
 ...
 [工作节点设置]
@@ -21,12 +24,13 @@ retry_times = 3
 # 上传失败重试间隔
 retry_interval = 5
 ```
-2. 安装依赖, `pip install -r requirements.txt` 或者使用uv `uv pip install -r requirements.txt`
-3. 运行`worker.py`文件, `python worker.py`启动工作节点
-4. 运行`video_monitor_upload.py`文件, `python video_monitor_upload.py`启动视频上传脚本 (基于服务端接口上传, 使用该脚本不建议视频单个块过大, 单个块过单会导致上传时间过长从而影响到服务后台, 如果需要保持单个视频块的一定大小, 建议额外部署一个server来单独处理文件上传, 从而防止影响后台程序正常使用)
 
+2. 安装依赖, `pip install -r requirements.txt` 或者使用uv `uv pip install -r requirements.txt`
+3. 运行 `worker_v4.0.6.py`文件, `python worker_v4.0.6.py`启动工作节点, 其中 `v4.0.6` 为版本号，可使用其他版本
+4. 运行 `video_monitor_upload.py`文件, `python video_monitor_upload.py`启动视频上传脚本 (基于服务端接口上传, 使用该脚本不建议视频单个块过大, 单个块过单会导致上传时间过长从而影响到服务后台, 如果需要保持单个视频块的一定大小, 建议额外部署一个server来单独处理文件上传, 从而防止影响后台程序正常使用)
 
 ## 💡简介
+
 [![Python Version](https://img.shields.io/badge/python-3.11.6-blue.svg)](https://www.python.org/downloads/release/python-3116/)
 [![Supported Platforms](https://img.shields.io/badge/platforms-Windows%20%7C%20Linux-blue.svg)](https://github.com/ihmily/DouyinLiveRecorder)
 [![Docker Pulls](https://img.shields.io/docker/pulls/ihmily/douyin-live-recorder?label=Docker%20Pulls&color=blue&logo=docker)](https://hub.docker.com/r/ihmily/douyin-live-recorder/tags)
@@ -40,57 +44,57 @@ retry_interval = 5
 
 ## 😺已支持平台
 
-- [x] 抖音
-- [x] TikTok
-- [x] 快手
-- [x] 虎牙
-- [x] 斗鱼
-- [x] YY
-- [x] B站
-- [x] 小红书
-- [x] bigo 
-- [x] blued
-- [x] SOOP(原AfreecaTV)
-- [x] 网易cc
-- [x] 千度热播
-- [x] PandaTV
-- [x] 猫耳FM
-- [x] Look直播
-- [x] WinkTV
-- [x] TTingLive(原Flextv)
-- [x] PopkonTV
-- [x] TwitCasting
-- [x] 百度直播
-- [x] 微博直播
-- [x] 酷狗直播
-- [x] TwitchTV
-- [x] LiveMe
-- [x] 花椒直播
-- [x] 流星直播
-- [x] ShowRoom
-- [x] Acfun
-- [x] 映客直播
-- [x] 音播直播
-- [x] 知乎直播
-- [x] CHZZK
-- [x] 嗨秀直播
-- [x] vv星球直播
-- [x] 17Live
-- [x] 浪Live
-- [x] 畅聊直播
-- [x] 飘飘直播
-- [x] 六间房直播
-- [x] 乐嗨直播
-- [x] 花猫直播
-- [x] Shopee
-- [x] Youtube
-- [x] 淘宝
-- [x] 京东
-- [x] Faceit
-- [x] 咪咕
-- [x] 连接直播
-- [x] 来秀直播
-- [x] Picarto
+- [X] 抖音
+- [X] TikTok
+- [X] 快手
+- [X] 虎牙
+- [X] 斗鱼
+- [X] YY
+- [X] B站
+- [X] 小红书
+- [X] bigo
+- [X] blued
+- [X] SOOP(原AfreecaTV)
+- [X] 网易cc
+- [X] 千度热播
+- [X] PandaTV
+- [X] 猫耳FM
+- [X] Look直播
+- [X] WinkTV
+- [X] TTingLive(原Flextv)
+- [X] PopkonTV
+- [X] TwitCasting
+- [X] 百度直播
+- [X] 微博直播
+- [X] 酷狗直播
+- [X] TwitchTV
+- [X] LiveMe
+- [X] 花椒直播
+- [X] 流星直播
+- [X] ShowRoom
+- [X] Acfun
+- [X] 映客直播
+- [X] 音播直播
+- [X] 知乎直播
+- [X] CHZZK
+- [X] 嗨秀直播
+- [X] vv星球直播
+- [X] 17Live
+- [X] 浪Live
+- [X] 畅聊直播
+- [X] 飘飘直播
+- [X] 六间房直播
+- [X] 乐嗨直播
+- [X] 花猫直播
+- [X] Shopee
+- [X] Youtube
+- [X] 淘宝
+- [X] 京东
+- [X] Faceit
+- [X] 咪咕
+- [X] 连接直播
+- [X] 来秀直播
+- [X] Picarto
 - [ ] 更多平台正在更新中
 
 </div>
@@ -129,19 +133,13 @@ retry_interval = 5
 ## 🌱使用说明
 
 - 对于只想使用录制软件的小白用户，进入[Releases](https://github.com/ihmily/DouyinLiveRecorder/releases) 中下载最新发布的 zip压缩包即可，里面有打包好的录制软件。（有些电脑可能会报毒，直接忽略即可，如果下载时被浏览器屏蔽，请更换浏览器下载）
-
-- 压缩包解压后，在 `config` 文件夹内的 `URL_config.ini` 中添加录制直播间地址，一行一个直播间地址。如果要自定义配置录制，可以修改`config.ini` 文件，推荐将录制格式修改为`ts`。
-- 以上步骤都做好后，就可以运行`DouyinLiveRecorder.exe` 程序进行录制了。录制的视频文件保存在同目录下的 `downloads` 文件夹内。
-
+- 压缩包解压后，在 `config` 文件夹内的 `URL_config.ini` 中添加录制直播间地址，一行一个直播间地址。如果要自定义配置录制，可以修改 `config.ini` 文件，推荐将录制格式修改为 `ts`。
+- 以上步骤都做好后，就可以运行 `DouyinLiveRecorder.exe` 程序进行录制了。录制的视频文件保存在同目录下的 `downloads` 文件夹内。
 - 另外，如果需要录制TikTok、AfreecaTV等海外平台，请在配置文件中设置开启代理并添加proxy_addr链接 如：`127.0.0.1:7890` （这只是示例地址，具体根据实际填写）。
-
-- 假如`URL_config.ini`文件中添加的直播间地址，有个别直播间暂时不想录制又不想移除链接，可以在对应直播间的链接开头加上`#`，那么将停止该直播间的监测以及录制。
-
-- 软件默认录制清晰度为 `原画` ，如果要单独设置某个直播间的录制画质，可以在添加直播间地址时前面加上画质即可，如`超清，https://live.douyin.com/745964462470` 记得中间要有`,` 分隔。
-
+- 假如 `URL_config.ini`文件中添加的直播间地址，有个别直播间暂时不想录制又不想移除链接，可以在对应直播间的链接开头加上 `#`，那么将停止该直播间的监测以及录制。
+- 软件默认录制清晰度为 `原画` ，如果要单独设置某个直播间的录制画质，可以在添加直播间地址时前面加上画质即可，如 `超清，https://live.douyin.com/745964462470` 记得中间要有 `,` 分隔。
 - 如果要长时间挂着软件循环监测直播，最好循环时间设置长一点（咱也不差没录制到的那几分钟），避免因请求频繁导致被官方封禁IP 。
-
-- 要停止直播录制，Windows平台可执行StopRecording.vbs脚本文件，或者在录制界面使用 `Ctrl+C ` 组合键中断录制，若要停止其中某个直播间的录制，可在`URL_config.ini`文件中的地址前加#，会自动停止对应直播间的录制并正常保存已录制的视频。
+- 要停止直播录制，Windows平台可执行StopRecording.vbs脚本文件，或者在录制界面使用 `Ctrl+C ` 组合键中断录制，若要停止其中某个直播间的录制，可在 `URL_config.ini`文件中的地址前加#，会自动停止对应直播间的录制并正常保存已录制的视频。
 - 最后，欢迎右上角给本项目一个star，同时也非常乐意大家提交pr。
 
 &emsp;
@@ -311,6 +309,7 @@ https://www.picarto.tv/cuteavalanche
 &emsp;
 
 ## 🎃源码运行
+
 使用源码运行，前提要有**Python>=3.10**环境，如果没有请先自行安装Python，再执行下面步骤。
 
 1.首先拉取或手动下载本仓库项目代码
@@ -360,12 +359,13 @@ brew install ffmpeg
 python main.py
 ```
 
-其中Linux系统请使用`python3 main.py` 运行。
+其中Linux系统请使用 `python3 main.py` 运行。
 
 &emsp;
+
 ## 🐋容器运行
 
-在运行命令之前，请确保您的机器上安装了 [Docker](https://docs.docker.com/get-docker/) 和 [Docker Compose](https://docs.docker.com/compose/install/) 
+在运行命令之前，请确保您的机器上安装了 [Docker](https://docs.docker.com/get-docker/) 和 [Docker Compose](https://docs.docker.com/compose/install/)
 
 1.快速启动
 
@@ -376,8 +376,6 @@ docker-compose up
 ```
 
 可选 `-d` 在后台运行。
-
-
 
 2.构建镜像(可选)
 
@@ -394,15 +392,11 @@ docker-compose up
 docker-compose -f docker-compose.yaml up
 ```
 
-
-
 3.停止容器实例
 
 ```bash
 docker-compose stop
 ```
-
-
 
 4.注意事项
 
@@ -421,15 +415,15 @@ docker-compose stop
 [![annidy](https://github.com/annidy.png?size=50)](https://github.com/annidy)
 [![wwkk2580](https://github.com/wwkk2580.png?size=50)](https://github.com/wwkk2580)
 [![missuo](https://github.com/missuo.png?size=50)](https://github.com/missuo)
-<a href="https://github.com/xueli12" target="_blank"><img src="https://github.com/xueli12.png?size=50" alt="xueli12" style="width:53px; height:51px;" /></a>
-<a href="https://github.com/kaine1973" target="_blank"><img src="https://github.com/kaine1973.png?size=50" alt="kaine1973" style="width:53px; height:51px;" /></a>
-<a href="https://github.com/yinruiqing" target="_blank"><img src="https://github.com/yinruiqing.png?size=50" alt="yinruiqing" style="width:53px; height:51px;" /></a>
-<a href="https://github.com/Max-Tortoise" target="_blank"><img src="https://github.com/Max-Tortoise.png?size=50" alt="Max-Tortoise" style="width:53px; height:51px;" /></a>
+`<a href="https://github.com/xueli12" target="_blank"><img src="https://github.com/xueli12.png?size=50" alt="xueli12" style="width:53px; height:51px;" />``</a>`
+`<a href="https://github.com/kaine1973" target="_blank"><img src="https://github.com/kaine1973.png?size=50" alt="kaine1973" style="width:53px; height:51px;" />``</a>`
+`<a href="https://github.com/yinruiqing" target="_blank"><img src="https://github.com/yinruiqing.png?size=50" alt="yinruiqing" style="width:53px; height:51px;" />``</a>`
+`<a href="https://github.com/Max-Tortoise" target="_blank"><img src="https://github.com/Max-Tortoise.png?size=50" alt="Max-Tortoise" style="width:53px; height:51px;" />``</a>`
 [![justdoiting](https://github.com/justdoiting.png?size=50)](https://github.com/justdoiting)
 [![dhbxs](https://github.com/dhbxs.png?size=50)](https://github.com/dhbxs)
 [![wujiyu115](https://github.com/wujiyu115.png?size=50)](https://github.com/wujiyu115)
 [![zhanghao333](https://github.com/zhanghao333.png?size=50)](https://github.com/zhanghao333)
-<a href="https://github.com/gyc0123" target="_blank"><img src="https://github.com/gyc0123.png?size=50" alt="gyc0123" style="width:53px; height:51px;" /></a>
+`<a href="https://github.com/gyc0123" target="_blank"><img src="https://github.com/gyc0123.png?size=50" alt="gyc0123" style="width:53px; height:51px;" />``</a>`
 
 &ensp;&ensp; [![HoratioShaw](https://github.com/HoratioShaw.png?size=50)](https://github.com/HoratioShaw)
 [![nov30th](https://github.com/nov30th.png?size=50)](https://github.com/nov30th)
@@ -438,6 +432,7 @@ docker-compose stop
 ## ⏳提交日志
 
 - 20250127
+
   - 新增淘宝、京东、faceit直播录制
   - 修复小红书直播流录制以及转码问题
   - 修复畅聊、VV星球、flexTV直播录制
@@ -446,8 +441,8 @@ docker-compose stop
   - 新增强制转h264配置
   - 更新ffmpeg版本
   - 重构包为异步函数！
-
 - 20241130
+
   - 新增shopee、youtube直播录制
   - 新增支持自定义m3u8、flv地址录制
   - 新增自定义执行脚本，支持python、bat、bash等
@@ -455,30 +450,38 @@ docker-compose stop
   - 修复b站标题获取错误
   - 修复log日志错误
 - 20241030
+
   - 新增嗨秀直播、vv星球直播、17Live、浪Live、SOOP、畅聊直播(原时光直播)、飘飘直播、六间房直播、乐嗨直播、花猫直播等10个平台直播录制
   - 修复小红书直播录制，支持小红书作者主页地址录制直播
   - 新增支持ntfy消息推送，以及新增支持批量推送多个地址（逗号分隔多个推送地址)
   - 修复Liveme直播录制、twitch直播录制
   - 新增Windows平台一键停止录制VB脚本程序
 - 20241005
+
   - 新增邮箱和Bark推送
   - 新增直播注释停止录制
   - 优化分段录制
   - 重构部分代码
 - 20240928
+
   - 新增知乎直播、CHZZK直播录制
   - 修复音播直播录制
 - 20240903
+
   - 新增抖音双屏录制、音播直播录制
   - 修复PandaTV、bigo直播录制
 - 20240713
+
   - 新增映客直播录制
 - 20240705
+
   - 新增时光直播录制
 - 20240701
+
   - 修复虎牙直播录制2分钟断流问题
   - 新增自定义直播推送内容
 - 20240621
+
   - 新增Acfun、ShowRoom直播录制
   - 修复微博录制、新增直播源线路
   - 修复斗鱼直播60帧录制
@@ -486,28 +489,37 @@ docker-compose stop
   - 修复TikTok部分无法解析直播源
   - 修复抖音无法录制连麦直播
 - 20240510
+
   - 修复部分虎牙直播间录制错误
 - 20240508
+
   - 修复花椒直播录制
   - 更改文件路径解析方式 [@kaine1973](https://github.com/kaine1973)
 - 20240506
+
   - 修复抖音录制画质解析bug
   - 修复虎牙录制 60帧最高画质问题
   - 新增流星直播录制
 - 20240427
+
   - 新增LiveMe、花椒直播录制
 - 20240425
+
   - 新增TwitchTV直播录制
 - 20240424
+
   - 新增酷狗直播录制、优化PopkonTV直播录制
 - 20240423
+
   - 新增百度直播录制、微博直播录制
   - 修复斗鱼录制直播回放的问题
   - 新增直播源地址显示以及输出到日志文件设置
 - 20240311
+
   - 修复海外平台录制bug，增加画质选择，增强录制稳定性
-  - 修复虎牙录制bug (虎牙`一起看`频道 有特殊限制，有时无法录制)
+  - 修复虎牙录制bug (虎牙 `一起看`频道 有特殊限制，有时无法录制)
 - 20240309
+
   - 修复虎牙直播、小红书直播和B站直播录制
   - 新增5个直播平台录制，包括winktv、flextv、look、popkontv、twitcasting
   - 新增部分海外平台账号密码配置，实现自动登录并更新配置文件中的cookie
@@ -515,6 +527,7 @@ docker-compose stop
   - 新增只推送开播消息不进行录制设置
   - 修复了一些bug
 - 20240209
+
   - 优化AfreecaTV录制，新增账号密码登录获取cookie以及持久保存
   - 修复了小红书直播因官方更新直播域名，导致无法录制直播的问题
   - 修复了更新URL配置文件的bug
@@ -583,12 +596,12 @@ docker-compose stop
   - 新增了快手直播录制，优化了部分代码
   - 上传了一个自动化获取抖音直播间页面Cookie的代码，可以用于录制
 - 20230803
-  - 通宵更新 
+  - 通宵更新
   - 新增了国际版抖音TikTok的直播录制，去除冗余 简化了部分代码
-- 20230724	
+- 20230724
   - 新增了一个通过抖音直播间地址获取直播视频流链接的API接口，上传即可用
+
   </details>
-  &emsp;
+   
 
 ## 有问题可以提issue, 我会在这里持续添加更多直播平台的录制 欢迎Star
-#### 
